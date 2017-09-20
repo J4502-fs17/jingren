@@ -1,8 +1,30 @@
-
-#container{
-margin:0 auto;
+body{
+  text-align: center;
 }
 
-#p{
-color: red;
+h1, h4{
+  font-family: "PT Sans",Helvetica, Arial, sans-serif;
+  color:white;
+}
+
+p,ul{
+  font-family: "IM Fell Great Primer", Georgia, "Times New Roman", serif;
+  color:red;
+  font-weight: bold;
+  text-align: center;
+}
+
+p{
+  font-style: italic;
+}
+ul{
+  list-style-type:none;
+}
+
+img{
+  border-style: none;
+}
+
+body{
+  background-color: green;
 }
