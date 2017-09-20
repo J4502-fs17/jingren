@@ -1,8 +1,8 @@
-#header{
-margin: auto;
+
+#container{
+margin:0 auto;
 }
 
 #p{
-margin: auto;
 color: red;
 }
