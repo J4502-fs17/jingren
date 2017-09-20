@@ -1,19 +1,18 @@
 body{
+margin: 0 auto;
  text-align:center;
  background-color: #B0C4DE;
 }
 
-#container{
-  Width:100%;
-  background-color:#6495ED;
-  margin-bottom: 20px;
-  text-align:center;
+ul{
+padding: 0;
 }
 
 #header{
   font-family: "Raleway",Helvetica, Arial, sans-serif;
   color:#00008B;
-  margin: 0 auto;
+  text-align: center;
+  margin:0 auto;
 }
 
 h1{
@@ -27,7 +26,6 @@ h1{
   font-family: "Indie Flower",Helvetica, Arial, sans-serif;
 }
 
-
 #nav a:link, #nav a:visited{
   text-align:center;
 }
@@ -38,6 +36,12 @@ h1{
   margin: 0 auto;
 }
 
+#container{
+  width:95%;
+  background-color:white;
+  margin:0 auto;
+  margin-bottom: 20px;
+}
 p{
   font-family: "Droid Serif", Georgia, "Times New Roman", serif;
   color:#4682B4;
