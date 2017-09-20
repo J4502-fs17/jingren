@@ -1,36 +1,32 @@
 body{
-text-align:center;
-background-color: #B0C4DE;
+ text-align:center;
+ background-color: #B0C4DE;
 }
 
 #container{
-Width:95%;
-background-color:#6495ED;
-margin: 0 auto;
-text-align:center;
-
-}
-
-#header{
-font-family: "Raleway",Helvetica, Arial, sans-serif;
-color:#00008B;
-}
-
-h1{
-font-size: 3rem;
-}
-#nav ul {
-  margin:0 auto;
+  Width:100%;
+  background-color:#6495ED;
+  margin-bottom: 20px;
   text-align:center;
 }
 
-#nav li{
-list-style-type:none;
-font-family: "Indie Flower",Helvetica, Arial, sans-serif;
-text-align:center;
-margin: 0 auto;
-
+#header{
+  font-family: "Raleway",Helvetica, Arial, sans-serif;
+  color:#00008B;
+  margin: 0 auto;
 }
+
+h1{
+  font-size: 3rem;
+}
+
+#nav{
+  margin:0 auto;
+  text-align:center;
+  list-style-type:none;
+  font-family: "Indie Flower",Helvetica, Arial, sans-serif;
+}
+
 
 #nav a:link, #nav a:visited{
   text-align:center;
@@ -43,12 +39,12 @@ margin: 0 auto;
 }
 
 p{
-font-family: "Droid Serif", Georgia, "Times New Roman", serif;
-color:#4682B4;
-font-weight:bold;
-font-style: italic;
+  font-family: "Droid Serif", Georgia, "Times New Roman", serif;
+  color:#4682B4;
+  font-weight:bold;
+  font-style: italic;
 }
 
 img{
-  border-style: none;
+  border-style: none;
 }
