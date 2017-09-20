@@ -1,6 +1,14 @@
 body{
-text-align: center;
+text-align:center;
 background-color: #B0C4DE;
+}
+
+#container{
+Width:95%;
+background-color:#6495ED;
+margin: 0 auto;
+text-align:center;
+
 }
 
 #header{
@@ -9,8 +17,10 @@ color:#00008B;
 }
 
 #nav li{
-display:block;
-font-family: Helvetica, Arial, sans-serif;
+list-style-type:none;
+font-family: "Indie Flower",Helvetica, Arial, sans-serif;
+text-align:center;
+margin: 0 auto;
 }
 
 #nav a:hover, #nav a:active{
@@ -20,12 +30,6 @@ font-family: Helvetica, Arial, sans-serif;
 p{
 font-family: "Droid Serif", Georgia, "Times New Roman", serif;
 color:#4682B4;
-font-weight: bold;
+font-weight:bold;
 font-style: italic;
-}
-
-
-
-
-
 }
