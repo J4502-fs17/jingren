@@ -1,30 +1,31 @@
 body{
-  text-align: center;
+text-align: center;
+background-color: #B0C4DE;
 }
 
-h1, h4{
-  font-family: "PT Sans",Helvetica, Arial, sans-serif;
-  color:white;
+#header{
+font-family: "Raleway",Helvetica, Arial, sans-serif;
+color:#00008B;
 }
 
-p,ul{
-  font-family: "IM Fell Great Primer", Georgia, "Times New Roman", serif;
-  color:red;
-  font-weight: bold;
-  text-align: center;
+#nav li{
+display:block;
+font-family: Helvetica, Arial, sans-serif;
+}
+
+#nav a:hover, #nav a:active{
+  background-color:#4169E1;
 }
 
 p{
-  font-style: italic;
-}
-ul{
-  list-style-type:none;
-}
-
-img{
-  border-style: none;
+font-family: "Droid Serif", Georgia, "Times New Roman", serif;
+color:#4682B4;
+font-weight: bold;
+font-style: italic;
 }
 
-body{
-  background-color: green;
+
+
+
+
 }
