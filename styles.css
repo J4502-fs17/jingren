@@ -49,6 +49,10 @@ p{
   font-style: italic;
 }
 
+#footer{
+color: black;
+margin-top: 5px;
+}
 img{
   border-style: none;
 }
