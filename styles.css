@@ -16,7 +16,13 @@ font-family: "Raleway",Helvetica, Arial, sans-serif;
 color:#00008B;
 }
 
-#nav ul
+h1{
+font-size: 3rem;
+}
+#nav ul {
+  margin:0 auto;
+  text-align:center;
+}
 
 #nav li{
 list-style-type:none;
@@ -32,6 +38,8 @@ margin: 0 auto;
 
 #nav a:hover, #nav a:active{
   background-color:#4169E1;
+  text-align:center;
+  margin: 0 auto;
 }
 
 p{
@@ -39,4 +47,8 @@ font-family: "Droid Serif", Georgia, "Times New Roman", serif;
 color:#4682B4;
 font-weight:bold;
 font-style: italic;
+}
+
+img{
+  border-style: none;
 }
