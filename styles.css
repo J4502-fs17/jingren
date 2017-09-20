@@ -16,11 +16,18 @@ font-family: "Raleway",Helvetica, Arial, sans-serif;
 color:#00008B;
 }
 
+#nav ul
+
 #nav li{
 list-style-type:none;
 font-family: "Indie Flower",Helvetica, Arial, sans-serif;
 text-align:center;
 margin: 0 auto;
+
+}
+
+#nav a:link, #nav a:visited{
+  text-align:center;
 }
 
 #nav a:hover, #nav a:active{
