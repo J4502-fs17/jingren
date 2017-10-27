@@ -68,8 +68,8 @@ font-style: italic;
 }
 
 .content{
-  display:flex;
-  flex-flow: column wrap;
+display:flex;
+flex-flow: column wrap;
 }
 
 
@@ -98,7 +98,6 @@ justify-content: center;
 flex-direction: row-reverse;
 justify-content: flex-end;
 }
-
 .content{
 flex-flow: row nowrap;
 }
