@@ -1,5 +1,4 @@
 body{
-margin: 0 auto;
 text-align:center;
 background-color: #B0C4DE;
 }
@@ -70,6 +69,7 @@ font-style: italic;
 .content{
 display:flex;
 flex-flow: column wrap;
+padding-bottom: 10px;
 }
 
 
@@ -100,5 +100,6 @@ justify-content: flex-end;
 }
 .content{
 flex-flow: row nowrap;
+padding-bottom: 60px;
 }
 }
