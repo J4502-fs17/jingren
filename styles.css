@@ -1,9 +1,31 @@
+/*flexbox.css*/
+
 body{
 margin: 0 auto;
  text-align:center;
  background-color: #B0C4DE;
 }
 
+.container {
+display: flex;
+flex-direction: column;
+}
+
+
+@media (min-width: 600px){
+.container {
+flex-direction: row;
+justify-content: center;
+}
+
+/*page.css*/
+.item {
+color: #000;
+padding: 15px;
+margin: 5px;
+background: #f1b82d;
+border-radius: 3px;
+}
 ul{
 padding: 0;
 }
@@ -48,7 +70,16 @@ p{
   font-weight:bold;
   font-style: italic;
 }
+#containerenter{
+margin:auto;
+background-color: #F4F4F4;
+text-align: center;
+}
 
+#reminder{
+margin: auto;
+text-align: center;
+}
 .footer {
 color: black;
 font-size: 1rem;
