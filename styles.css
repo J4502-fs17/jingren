@@ -4,23 +4,15 @@ margin: 0 auto;
  background-color: #B0C4DE;
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
-}
 
 @media (min-width: 600px) {
-.container {
+.nav {
 flex-direction: row;
 justify-content: center;
-}
-}
-.item {
-color: white;
-padding: 20px;
-margin: 10px;
-background: #3852B3;
-border-radius: 4px;
+flex-wrap: wrap;
+align-items:center;
+justify-content: space-around;
+	}
 }
 ul{
 padding: 0;
@@ -37,24 +29,28 @@ h1{
   font-size: 3rem;
 }
 
-#nav{
+.nav{
 margin:0 auto;
 text-align:center;
 list-style-type:none;
 font-family: "Indie Flower",Helvetica, Arial, sans-serif;
 }
 
-#nav a:link, #nav a:visited{
+.nav a:link, a:visited{
   text-align:center;
 }
-
-#nav a:hover, #nav a:active{
+.nav{
+display:flex;
+flex-direction: column;
+flex-wrap:nowrap;
+}
+.nav a:hover, a:active{
 background-color:#4169E1;
 text-align:center;
 margin: 0 auto;
 }
 
-#container{
+.nav{
 width:95%;
 background-color:white;
 margin:0 auto;
