@@ -13,10 +13,12 @@ align-content: center;
 margin: auto;
 width: 95%;
 }
+
 #nav {
 display: flex;
 flex-direction: column;
 list-style-type:none;
+padding:4px;
 }
 
 ul{
@@ -38,11 +40,11 @@ font-size: 3rem;
 margin:auto;
 text-align:center;
 list-style-type:none;
-padding:4px;
 }
 
 #nav a:link, #nav a:visited{
 display:block;
+margin: 6px;
 Color:#0F08B3;
 background-color: white;
 font-weight: bold;
