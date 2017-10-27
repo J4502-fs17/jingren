@@ -5,9 +5,9 @@ margin: 0 auto;
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
 .nav {
-flex-direction:column;
+flex-direction:row;
 justify-content: center;
 
 }
@@ -29,6 +29,7 @@ h1{
 }
 
 .nav{
+display: flex;
 margin:0 auto;
 text-align:center;
 list-style-type:none;
@@ -38,10 +39,8 @@ font-family: "Indie Flower",Helvetica, Arial, sans-serif;
 .nav a:link, a:visited{
 text-align:center;
 }
-.nav{
-display:block;
-flex-direction: column;
-}
+
+
 .nav a:hover, a:active{
 background-color:#4169E1;
 text-align:center;
