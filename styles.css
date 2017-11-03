@@ -31,9 +31,13 @@ width: 100%;
 }
 
 
-h2{
-font-size: 2rem;
-text-align: center;
+.categories{
+background-color:#93949C;
+font-size: 1.5rem;
+text-align:center;
+color: white;
+padding: 5px;
+margin-bottom:20px;
 }
 
 
@@ -102,7 +106,14 @@ img{
 border-style: none;
 display: flex;
 }
+article {
+margin-bottom: 0.7em;
+border-bottom: 1px solid #ccc;
+}
 
+article:last-of-type {
+border-bottom: none;
+}
 @media screen (min-width: 400px) {
 nav ul{
 flex-direction: row;
@@ -151,7 +162,7 @@ grid-area:j;
 
 .content{
 display:grid;
-grid-template-columns: 600px 1fr;
+grid-template-columns: 500px 500px;
 grid-gap:200px;
 grid-template-areas:
 "m n";
