@@ -3,7 +3,7 @@ body{
 background-color: white;
 }
 
-nav ul {
+#nav {
 display: flex;
 padding: 0;
 flex-flow: column;
@@ -40,7 +40,7 @@ padding: 5px;
 margin-bottom:20px;
 }
 
-nav a:link, nav a:visited{
+#nav a:link, #nav a:visited{
 display:block;
 margin: 6px;
 Color:#48484C;
@@ -52,7 +52,7 @@ font-size: 1rem;
 }
 
 
-nav a:hover,nav a:active{
+#nav a:hover,#nav a:active{
 background-color:#93949C;
 }
 
@@ -118,8 +118,9 @@ border-bottom: none;
   text-align:center;
   margin: 0 auto;
 }
+
 @media (min-width: 400px) {
-nav ul{
+#nav{
 flex-direction: row;
 justify-content: space-between;
 }
@@ -131,7 +132,7 @@ justify-content: space-between;
 }
 
 @media (min-width: 600px) {
-nav ul{
+#nav{
 flex-direction: row;
 justify-content: space-between;
 }
@@ -142,7 +143,7 @@ display: flex;
 
 
 @media (min-width: 1000px) {
-nav ul{
+#nav{
 flex-direction: row;
 justify-content: space-between;
 }
