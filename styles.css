@@ -1,9 +1,15 @@
 body{
-text-align:center;
-background-color: #B0C4DE;
+background-color: white;
 }
 
-.container{
+nav ul {
+display: flex;
+flex-flow: column;
+list-style-type:none;
+}
+
+
+#container{
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
@@ -13,35 +19,18 @@ margin: auto;
 width: 95%;
 }
 
-#nav {
-display: flex;
-flex-direction: column;
-list-style-type:none;
-padding:4px;
-}
+
 
 ul{
 padding:0;
-}
-
-#header{
-font-family: "Raleway",Helvetica, Arial, sans-serif;
-color:#00008B;
-text-align: center;
-margin:0 auto;
-}
-
-h1{
-font-size: 3rem;
-}
-
-#nav{
-margin:auto;
-text-align:center;
 list-style-type:none;
 }
 
-#nav a:link, #nav a:visited{
+
+.intro{
+background-color: #48484C;
+}
+nav a:link, nav a:visited{
 display:block;
 margin: 6px;
 Color:#0F08B3;
@@ -54,22 +43,20 @@ font-size: 1.5rem;
 }
 
 
-#nav a:hover,#nav a:active{
+nav a:hover,nav a:active{
 background-color:#4169E1;
 }
 
 
 p{
 font-family: "Droid Serif", Georgia, "Times New Roman", serif;
-color:#4682B4;
+color:black;
 font-weight:bold;
-font-style: italic;
 }
 
-.content{
+.intro{
 display:flex;
 flex-flow: column wrap;
-padding-bottom: 10px;
 }
 
 
@@ -85,21 +72,90 @@ width: 100%;
 text-align: center;
 }
 
+
 img{
 border-style: none;
+display: flex;
 }
 
-@media (min-width: 600px) {
-#nav{
+
+
+@media screen (min-width: 400px) {
+nav ul{
 flex-direction: row;
-justify-content: center;
+justify-content: space-between;
 }
-.container {
-flex-direction: row-reverse;
-justify-content: flex-end;
+.intro{
+margin-left: 10px;
+flex-flow: row nowrap;
+}
+}
+
+@media screen and (min-width: 800px) {
+nav ul{
+flex-direction: row;
+justify-content: space-between;
+}
+
+.intro{
+display: flex;
+}
+
+@media screen and (min-width: 1000px) {
+nav ul{
+flex-direction: row;
+justify-content: space-between;
+}
+.item1 {
+margin-right: auto;
+}
+
+.intro{
+display:grid;
+grid-template-columns: 400px 1fr 1fr;
+grid-gap: 100px;
+grid-template-areas:
+"h i j";
 }
 .content{
-flex-flow: row nowrap;
-padding-bottom: 60px;
+display:grid;
+grid-template-columns: 500px 1fr;
+grid-gap:200px;
+grid-template-areas:
+"m n";
+}
+
+article{
+display:grid;
+grid-template-columns: 100px 1fr;
+grid-gap:20px;
+grid-template-areas:
+"r s";
+}
+
+.part1{
+grid-area:m;
+}
+.part2{
+grid-area:n;
+}
+
+header{
+grid-area:r;
+}
+section{
+grid-area:s;
+}
+
+.selfimg{
+grid-area: h;
+}
+.contact{
+grid-area:i;
+}
+.study{
+grid-area:j;
+}
+
 }
 }
