@@ -1,41 +1,49 @@
+
 body{
 background-color: white;
 }
 
 nav ul {
 display: flex;
+padding: 0;
 flex-flow: column;
 list-style-type:none;
 }
 
+article {
+margin-bottom: 0.7em;
+border-bottom: 1px solid white;
+}
+
+article:last-of-type {
+border-bottom: none;
+}
 
 #container{
+background-color: #48484C;
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 justify-content: center;
 align-content: center;
 margin: auto;
-width: 95%;
+width: 100%;
+}
+
+
+h2{
+font-size: 2rem;
+text-align: center;
 }
 
 
 
-ul{
-padding:0;
-list-style-type:none;
-}
 
-
-.intro{
-background-color: #48484C;
-}
 nav a:link, nav a:visited{
 display:block;
 margin: 6px;
-Color:#0F08B3;
+Color:#48484C;
 background-color: white;
-font-weight: bold;
 text-align:center;
 padding: 4px;
 font-family: "Indie Flower",Helvetica, Arial, sans-serif;
@@ -44,17 +52,24 @@ font-size: 1.5rem;
 
 
 nav a:hover,nav a:active{
-background-color:#4169E1;
+background-color:#93949C;
 }
 
 
 p{
 font-family: "Droid Serif", Georgia, "Times New Roman", serif;
-color:black;
-font-weight:bold;
+color:#DADBE7;
+
+}
+.dateline{
+font-size: 0.8rem;
+}
+.intro{
+display:flex;
+flex-flow: column wrap;
 }
 
-.intro{
+.content{
 display:flex;
 flex-flow: column wrap;
 }
@@ -72,34 +87,41 @@ width: 100%;
 text-align: center;
 }
 
+.headline{
+margin-top: 0;
+font-size: 1.5rem;
+}
+.authorbox{
+margin-top: 0;
+}
+
+.logo{
+margin-top: 0;
+}
 
 img{
 border-style: none;
 display: flex;
 }
 
-
-
 @media screen (min-width: 400px) {
 nav ul{
 flex-direction: row;
 justify-content: space-between;
 }
-.intro{
-margin-left: 10px;
-flex-flow: row nowrap;
-}
+
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
 nav ul{
 flex-direction: row;
 justify-content: space-between;
 }
-
 .intro{
 display: flex;
 }
+}
+
 
 @media screen and (min-width: 1000px) {
 nav ul{
@@ -117,12 +139,30 @@ grid-gap: 100px;
 grid-template-areas:
 "h i j";
 }
+
+.selfimg{
+grid-area: h;
+}
+.contact{
+grid-area:i;
+}
+.study{
+grid-area:j;
+}
+
 .content{
 display:grid;
-grid-template-columns: 500px 1fr;
+grid-template-columns: 600px 1fr;
 grid-gap:200px;
 grid-template-areas:
 "m n";
+}
+
+.part1{
+grid-area:m;
+}
+.part2{
+grid-area:n;
 }
 
 article{
@@ -133,28 +173,11 @@ grid-template-areas:
 "r s";
 }
 
-.part1{
-grid-area:m;
-}
-.part2{
-grid-area:n;
-}
-
 header{
 grid-area:r;
 }
 section{
 grid-area:s;
-}
-
-.selfimg{
-grid-area: h;
-}
-.contact{
-grid-area:i;
-}
-.study{
-grid-area:j;
 }
 
 }
