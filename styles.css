@@ -3,12 +3,19 @@ body{
 background-color: white;
 }
 
-#nav {
-display: flex;
+nav ul{
+display: none;
 padding: 0;
 flex-flow: column;
 list-style-type:none;
 }
+
+.menu-trigger{
+font-size: 30px;
+color: white;
+background-color:#48484C;
+}
+
 
 #container{
 background-color: #48484C;
@@ -17,10 +24,9 @@ flex-direction: column;
 flex-wrap: wrap;
 justify-content: center;
 align-content: center;
-margin: auto;
-width: 95%;
+margin-top: 10px;
+width: 100%;
 }
-
 
 .categories{
 background-color:#93949C;
@@ -31,7 +37,7 @@ padding: 5px;
 margin-bottom:20px;
 }
 
-#nav a:link, #nav a:visited{
+nav ul a:link, nav ul a:visited{
 display:block;
 margin: 6px;
 Color:#48484C;
@@ -43,10 +49,9 @@ font-size: 1rem;
 }
 
 
-#nav a:hover,#nav a:active{
+nav ul a:hover,nav ul a:active{
 background-color:#93949C;
 }
-
 
 p{
 font-family: "Droid Serif", Georgia, "Times New Roman", serif;
@@ -98,25 +103,25 @@ display: flex;
 }
 
 
+
 .headerimage, .contentimage {
   text-align:center;
   margin: 0 auto;
 }
 
-@media (min-width: 400px) {
-#nav{
-flex-direction: column;
-justify-content: space-between;
-}
+@media (min-width: 500px) {
 .headerimage, .contentimage {
-  text-align:center;
-  margin: 0 auto;
+text-align:center;
+margin: 0 auto;
 }
 
+.menu-trigger{
+display:none;
 }
 
 @media (min-width: 600px) {
-#nav{
+nav ul{
+display: flex;
 flex-direction: row;
 justify-content: space-between;
 }
@@ -127,13 +132,12 @@ display: flex;
 
 
 @media (min-width: 1000px) {
-#nav{
+nav ul{
+display: flex;
 flex-direction: row;
 justify-content: space-between;
 }
-.item1 {
-margin-right: auto;
-}
+
 .intro{
 display:grid;
 grid-template-columns: 1fr 1fr 1fr;
