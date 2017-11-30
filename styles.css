@@ -18,6 +18,8 @@ text-decoration: none;
 }
 
 
+
+
 #container{
 background-color: #48484C;
 display: flex;
@@ -105,13 +107,13 @@ display: flex;
 
 
 
-.headerimage, .contentimage {
+.selfimg, .contentimage,.map {
 text-align:center;
 margin: 0 auto;
 }
 
 @media (min-width: 500px) {
-.headerimage, .contentimage {
+.selfimg, .contentimage {
 text-align:center;
 margin: 0 auto;
 }
@@ -142,10 +144,10 @@ justify-content: space-between;
 
 .intro{
 display:grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-gap: 100px;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-gap:5px;
 grid-template-areas:
-"h i j";
+"h i j k";
 }
 .selfimg{
 grid-area: h;
@@ -155,6 +157,10 @@ grid-area:i;
 }
 .study{
 grid-area:j;
+}
+
+.map{
+grid-area: k;
 }
 .content{
 display:grid;
@@ -182,4 +188,6 @@ grid-area:r;
 .section{
 grid-area:s;
 }
+
+
 }
