@@ -10,14 +10,17 @@ flex-flow: column;
 list-style-type:none;
 }
 
+iframe{
+display: block;
+margin: auto;
+}
+
 .menu-trigger{
 font-size: 30px;
 color: white;
 background-color:#48484C;
 text-decoration: none;
 }
-
-
 
 
 #container{
@@ -60,6 +63,10 @@ p{
 font-family: "Droid Serif", Georgia, "Times New Roman", serif;
 color:#DADBE7;
 
+}
+.view{
+text-align: center;
+color: black;
 }
 .dateline{
 font-size: 0.8rem;
@@ -110,20 +117,22 @@ display: flex;
 .selfimg, .contentimage,.map {
 text-align:center;
 margin: 0 auto;
+display: flex;
 }
 
-@media (min-width: 500px) {
-.selfimg, .contentimage {
-text-align:center;
-margin: 0 auto;
-}
 
-.menu-trigger{
-display:none;
-}
-}
+
 
 @media (min-width: 600px) {
+
+
+.selfimg, .contentimage {
+  text-align:center;
+  margin: 0 auto;
+  }
+  .menu-trigger{
+  display:none;
+  }
 nav ul{
 display: flex;
 flex-direction: row;
@@ -136,6 +145,7 @@ display: flex;
 
 
 @media (min-width: 1000px) {
+
 nav ul{
 display: flex;
 flex-direction: row;
